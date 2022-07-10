@@ -6,11 +6,6 @@ import headerAPI from './api/headerAPI';
 import aboutAPI from './api/aboutAPI';
 
 
-const descAbout = ["I am from Indonesia and graduated from Information Technology from Malang State Polytechnic. I have also been a photographer & graphic design at a Addface.co and now I look forward to working with you !",
-"I often spend my time exploring on Dribbble and exploring new things, starting from animation and design trends in the years to come and this year.",
-"And lately I've been enjoying studying animation using the Principle tools. Even though I'm not an expert yet but I like new things and it's good to learn."];
-
-
 
 const App = () => {
   // console.log(hello())
