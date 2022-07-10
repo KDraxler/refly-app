@@ -1,7 +1,7 @@
 .glow{
     position: absolute;
     filter: blur(105px);
-    opacity: 0.42;
+    opacity: 0.72;
 }
 #gl1{
     fill: url(#col);

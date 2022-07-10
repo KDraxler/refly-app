@@ -9,7 +9,7 @@ import aboutAPI from './api/aboutAPI';
 
 const App = () => {
   // console.log(hello())
-  const [header, setHeader] = useState([])
+  const [header, setHeader] = useState(null)
   const [about, setAbout] = useState(null)
   const [loading, setLoading] = useState(true)
   useEffect(() => {
@@ -20,11 +20,11 @@ const App = () => {
 
     const allPromise = [promiseHeader, promiseAbout]
 
-    Promise.all(allPromise).then(([resHeader, resAbout])=>{
-      setHeader(resHeader.data)
-      setAbout(resAbout.data)
-      setLoading(false)
-
+    Promise.all(allPromise).then(
+      ([resHeader, resAbout]) => {
+        setHeader(resHeader.data)
+        setAbout(resAbout.data)
+        setLoading(false)
     })
 
   }, [])
@@ -32,7 +32,7 @@ const App = () => {
   if(loading) return <h1>Loading</h1> 
   return (
     <div className='App'>
-        {/* <Navbar_c_new/> */}
+        <Navbar_c_new/>
         <Header  data={header} />
         <About data={about} />
         {/* <About about={[]} title="Proverb Don't Know Then Don't Love" heading="About Us" description={descAbout}/> */}

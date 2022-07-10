@@ -1,7 +1,8 @@
 import axios from 'axios'
+import config from '../config/config';
 
 const api = axios.create({
-    baseURL: "https://fast-escarpment-83544.herokuapp.com/api",
+    baseURL: config.apiURL+"/api",
 })
 
 export default api;
