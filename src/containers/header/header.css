@@ -1,0 +1,36 @@
+.refly__header{
+    position: relative;
+}
+
+.refly__header #gl1{
+    z-index: -1;
+    top: -30px;
+    left: 0;
+}
+.refly__header #gl2{
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+.refly__header-content__title{
+    font-family: var(--font-rubik);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--color-subtext);
+
+    margin-top: 130px;
+}
+
+.refly__header-content__heading{
+    font-family: var(--font-clash);
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 96px;
+    color: var(--color-text);
+
+    margin-top: 16px;
+}
+.refly__header-content__more {
+    margin-top: 110px;
+}

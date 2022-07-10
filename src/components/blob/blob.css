@@ -1,0 +1,20 @@
+.glow{
+    position: absolute;
+    filter: blur(105px);
+    opacity: 0.42;
+}
+#gl1{
+    fill: url(#col);
+}
+#gl2{
+    fill: url(#col2);
+}
+#gl3{
+    fill: url(#col3);
+}
+#gl4{
+    fill: url(#col4);
+}
+#gl5{
+    fill: url(#col5);
+}

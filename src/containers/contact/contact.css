@@ -1,0 +1,60 @@
+.refly__contact{
+    position: relative;
+}
+.refly__contact #gl5{
+    z-index: -1;
+    bottom: -200px;
+    right: 0;
+}
+.refly__contact-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.refly__contact-content__title{
+    font-family: var(--font-rubik);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height, or 150% */
+
+    text-transform: capitalize;
+    color: var(--color-subtext);
+
+    margin-bottom: 16px;
+
+}
+
+.refly__contact-content__heading{
+    font-family: var(--font-clash);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 96px;
+
+    color: var(--color-text);
+    margin-bottom: 48px;
+}
+
+.refly__contact-content__btn{
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+}
+
+.refly__contact-content__btn p{
+    font-family: var(--font-clash);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: var(--color-text);
+    margin-right: 18.25px;
+}
+
+.refly__contact-content__btn img{
+    width: 13.5px;
+    height: 13.5px;
+}

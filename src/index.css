@@ -1,0 +1,15 @@
+@import url('http://fonts.cdnfonts.com/css/clash-display');
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Rubik:wght@300;400;600&display=swap');
+
+:root{
+    --font-clash : 'Clash Display', sans-serif;
+    --font-rubik : 'Rubik', sans-serif;
+
+    --color-text : #FFFFFF;
+    --color-subtext : #CACBCB;
+
+    --color-bg : #121212;
+    --color-bg-card : #202020;
+    --color-bg-card-type : #333333;
+    --color-footer : #23262C;
+}

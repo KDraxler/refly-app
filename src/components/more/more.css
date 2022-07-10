@@ -1,0 +1,66 @@
+.refly__more{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.refly__more-scroll{
+    display: flex;
+    align-items: center;
+}
+.refly__more-scroll p{
+    width: max-content;
+    font-family: var(--font-rubik);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    /* margin: 0 0 0 -994px; */
+    
+}
+
+.refly__more-scroll__blink{
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    background-color: rgba(202, 203, 203, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+
+    animation: blink ease-in-out 3s infinite;
+}
+
+@keyframes blink {
+    0% {    background-color: rgba(202, 203, 203, 0)    }
+    50% {    background-color: rgba(202, 203, 203, 0.3)    }
+    100% {    background-color: rgba(202, 203, 203, 0)    }
+}
+
+.refly__more-social{
+    display: flex;
+    gap: 25px;
+    /* right: 0; */
+}
+.refly__more-icon__bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(202, 203, 203, 0.12);
+}
+
+.refly__more-icon__bg:hover{
+    background-color: rgba(95, 0, 228, 0.2);
+}
+
+.refly__more-icon__bg a,img{
+    height: 30px;
+}

@@ -1,0 +1,38 @@
+.refly__offer{
+    max-width: 380px;
+    margin-top: 20px;
+}
+
+.refly__offer img{
+    width: 80px;
+    height: 80px;
+
+    margin-bottom: 42px;
+}
+
+
+.refly__offer h2{
+    font-family: var(--font-clash);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+
+    text-transform: capitalize;
+
+    color: var(--color-text);
+    margin-bottom: 16px;
+
+}
+
+.refly__offer p{
+    font-family: var(--font-rubik);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+
+
+    color: var(--color-subtext);
+
+}

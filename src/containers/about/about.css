@@ -1,0 +1,48 @@
+.refly__about{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.refly__about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+}
+
+.refly__about-content__title{
+    font-family: var(--font-rubik);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #CACBCB;
+    
+}
+
+
+.refly__about-content__heading{
+    font-family: var(--font-clash);
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 96px;
+    color: #FFF;
+
+    margin-top: -16px;
+}
+
+.refly__about-content__description{
+    font-family: var(--font-rubik);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #CACBCB;
+}
+
+.refly__about-image img{
+    width: 529.5px;
+    height: 568px;
+}
+
