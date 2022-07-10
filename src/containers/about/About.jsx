@@ -20,13 +20,10 @@ const About = (props) => {
             return(<p className='refly__about-content__description' key={Object.keys(desc)}>{desc}</p>)
           })
         }
-        {/* <p className='refly__about-content__description'>{props.data.attributes.description}</p> */}
-        {/* <p className='refly__about-content__description'>{props.description[1]}</p> */}
-        {/* <p className='refly__about-content__description'>{props.description[2]}</p> */}
       </div>
       <div className='refly__about-image'>
         <img src={config.apiURL+props.data.attributes.image.data.attributes.formats.large.url} alt="Refly" />
-        {/* {console.log(config.apiURL+props.data.attributes.image.data.attributes.formats.large.url)} */}
+        {console.log(config.apiURL+props.data.attributes.image.data.attributes.formats.large.url)}
       </div>
     </div>
   )
