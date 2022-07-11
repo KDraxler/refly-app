@@ -11,5 +11,8 @@ export { default as Blob3_c } from './blob/Blob3'
 export { default as Blob4_c } from './blob/Blob4'
 export { default as More_c } from './more/More'
 export const hello = () =>{
-    return("hello there")
+    return({
+        tes : "hello there",
+        testing: "hehe iso",
+    })
 }

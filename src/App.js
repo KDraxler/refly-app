@@ -2,21 +2,19 @@ import React, { useEffect, useState } from 'react'
 import {About, Contact, Exploration, Footer, Header, Favorite, Services} from './containers';
 import { Navbar_c_new, hello } from './components';
 import './App.css';
-import headerAPI from './api/headerAPI';
-import aboutAPI from './api/aboutAPI';
+import {headerAPI, aboutAPI} from './api/dataAPI'
 
 
 
 const App = () => {
-  // console.log(hello())
+  // console.log(hello().testing)
   const [header, setHeader] = useState(null)
   const [about, setAbout] = useState(null)
   const [loading, setLoading] = useState(true)
   useEffect(() => {
     
-    const promiseHeader = headerAPI.filter('home')
-    
-    const promiseAbout = aboutAPI.find()
+    const promiseHeader = headerAPI().filter('home')
+    const promiseAbout = aboutAPI().find()
 
     const allPromise = [promiseHeader, promiseAbout]
 
