@@ -16,7 +16,10 @@ const App = () => {
     const promiseHeader = headerAPI().filter('home')
     const promiseAbout = aboutAPI().find()
 
-    const allPromise = [promiseHeader, promiseAbout]
+    const allPromise = [
+      promiseHeader, 
+      promiseAbout
+    ]
 
     Promise.all(allPromise).then(
       ([resHeader, resAbout]) => {
