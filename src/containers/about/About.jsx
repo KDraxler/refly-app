@@ -22,7 +22,7 @@ const About = (props) => {
         }
       </div>
       <div className='refly__about-image'>
-        <img src={config.apiURL+props.data.attributes.image.data.attributes.formats.large.url} alt="Refly" />
+        <img src={props.data.attributes.image.data.attributes.formats.large.url} alt="Refly" />
         {/* {console.log(config.apiURL+props.data.attributes.image.data.attributes.formats.large.url)} */}
       </div>
     </div>
