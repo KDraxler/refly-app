@@ -17,7 +17,9 @@ const About = (props) => {
         <h1 className='refly__about-content__heading'>{props.data.attributes.title}</h1>
         {
           description.length === 0 ? <p>No Description</p> : description.map(desc => {
-            return(<p className='refly__about-content__description' key={Object.keys(desc)}>{desc}</p>)
+            return(
+              <p className='refly__about-content__description' key={Object.keys(desc)}>{desc}</p>
+            )
           })
         }
       </div>

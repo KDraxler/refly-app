@@ -12,3 +12,9 @@ export const aboutAPI = () => {
         find: () =>  api.get('/about?populate=*').then((res) => res.data),
     })
 }
+
+export const favoriteAPI = () => {
+    return({
+        find: () =>  api.get('/favorite?populate=*').then((res) => res.data),
+    })
+}
