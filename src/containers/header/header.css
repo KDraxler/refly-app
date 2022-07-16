@@ -34,3 +34,15 @@
 .refly__header-content__more {
     margin-top: 110px;
 }
+
+@media screen and (max-width: 1366px) {
+    
+    .refly__header-content__title{
+        margin-top: 40px;
+    }
+
+    .refly__header-content__heading{
+        font-size: 54px;
+        line-height: 76px;
+    }
+}
