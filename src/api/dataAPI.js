@@ -15,6 +15,42 @@ export const aboutAPI = () => {
 
 export const favoriteAPI = () => {
     return({
-        find: () =>  api.get('/favorite?populate=*').then((res) => res.data),
+        find: () =>  api.get('/favorite?populate[projects][populate]=*').then((res) => res.data),
+    })
+}
+
+export const explorationAPI = () => {
+    return({
+        find: () =>  api.get('/exploration?populate[explores][populate]=*').then((res) => res.data),
+    })
+}
+
+export const serviceAPI = () => {
+    return({
+        find: () =>  api.get('/service?populate[serves][populate]=*').then((res) => res.data),
+    })
+}
+
+export const contactUsAPI = () => {
+    return({
+        find: () =>  api.get('/contact-us').then((res) => res.data),
+    })
+}
+
+export const exploreAPI = () => {
+    return({
+        find: () =>  api.get('/explores?populate=*').then((res) => res.data),
+    })
+}
+
+export const moreAPI = () => {
+    return({
+        find: () =>  api.get('/s-more?populate[icon][populate]=*&populate[links][populate]=*').then((res) => res.data),
+    })
+}
+
+export const footerAPI = () => {
+    return({
+        find: () =>  api.get('/footer?populate=*').then((res) => res.data),
     })
 }

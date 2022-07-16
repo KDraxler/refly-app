@@ -2,8 +2,6 @@ import React from 'react';
 import './favorite.css';
 import Project from '../../components/project/Project';
 import Arrow from '../../assets/Arrow.png';
-import Radio from '../../assets/project/mobile/radio.png';
-import Maintenance from '../../assets/project/mobile/maintenance.png';
 import { Blob2_c } from '../../components';
 
 const Favorite = (props) => {
@@ -21,7 +19,7 @@ const Favorite = (props) => {
           {
             props.data.attributes.projects.data === null ? <p>No Project</p> : props.data.attributes.projects.data.map(dataProj => {
               return(
-                <Project key={dataProj.id} data={dataProj} platform="MOBILE" heading="Radio PPI Redesign" description="There are several elements that need to be improvised in the design because it is not friendly, a media player that seems to be a media player patch and a broadcast schedule which is hardcoded embed from google sheet." image={Radio}/>
+                <Project key={dataProj.id} data={dataProj} />
               )
             })
           }

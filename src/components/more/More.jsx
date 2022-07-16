@@ -1,36 +1,41 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
+import { moreAPI } from '../../api/dataAPI';
 import './more.css';
-import Mouse from '../../assets/Mouse.png'
-import Dribbble from '../../assets/Dribbble.png'
-import LinkedIn from '../../assets/LinkedIn.png'
-import Instagram from '../../assets/Instagram.png'
-
-const Icons = (props) => {
-    return (
-        <>
-            <div className="refly__more-icon__bg">
-                <a href={props.href}><img src={props.src} alt={props.alt} /></a>
-            </div>
-        </>
-    )
-}
 
 const More = () => {
-  return (
-    <div className='refly__more'>
-        <div className="refly__more-scroll">
-            <div className="refly__more-scroll__blink">
-                <Icons src={Mouse} alt="Mouse"/>
+    const [moreData, setMoreData] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(()=>{
+        moreAPI().find().then((res) => {
+            setMoreData(res.data);
+            setLoading(false)
+        })
+    },[])
+    if(loading) return <h1>Loading</h1> 
+    return (
+        <div className='refly__more'>
+            <div className="refly__more-scroll">
+                <div className="refly__more-scroll__blink">
+                    <div className="refly__more-icon__bg">
+                        <a href="#"><img src={moreData.attributes.icon.data.attributes.url} alt="mouse" /></a>
+                    </div>
+                </div>
+                <p>{moreData.attributes.desc}</p>
             </div>
-            <p>Scroll down for more</p>
+            <div className="refly__more-social">
+                {
+                    moreData.attributes.links.data === null ? <p>No links</p> : moreData.attributes.links.data.map(link => {
+                        return(
+                            <div key={link.id} className="refly__more-icon__bg">
+                                <a href={link.attributes.link}><img src={link.attributes.image.data.attributes.url} alt={link.attributes.title} /></a>
+                            </div>
+                        )
+                    })
+                }
+            </div>
         </div>
-        <div className="refly__more-social">
-            <Icons src={Dribbble} alt="Dribbble" href="#"/>
-            <Icons src={Instagram} alt="Instagram" href="#"/>
-            <Icons src={LinkedIn} alt="LinkedIn" href="#"/>
-        </div>
-    </div>
-  )
+    )
 }
 
 export default More

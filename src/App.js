@@ -5,7 +5,10 @@ import './App.css';
 import {
   headerAPI, 
   aboutAPI, 
-  favoriteAPI
+  favoriteAPI,
+  explorationAPI,
+  serviceAPI,
+  contactUsAPI,
 } from './api/dataAPI'
 
 
@@ -15,6 +18,9 @@ const App = () => {
   const [headerData, setHeaderData] = useState(null)
   const [aboutData, setAboutData] = useState(null)
   const [favoriteData, setFavoriteData] = useState(null)
+  const [explorationData, setExplorationData] = useState(null)
+  const [serviceData, setServiceData] = useState(null)
+  const [contactUsData, setContactUsData] = useState(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -22,18 +28,27 @@ const App = () => {
     const promiseHeader = headerAPI().filter('home')
     const promiseAbout = aboutAPI().find()
     const promiseFavorite = favoriteAPI().find()
+    const promiseExploration = explorationAPI().find()
+    const promiseService = serviceAPI().find()
+    const promiseContactUs = contactUsAPI().find()
 
     const allPromise = [
       promiseHeader, 
       promiseAbout,
-      promiseFavorite
+      promiseFavorite,
+      promiseExploration,
+      promiseService,
+      promiseContactUs
     ]
 
     Promise.all(allPromise).then(
-      ([resHeader, resAbout, resFavorite]) => {
+      ([resHeader, resAbout, resFavorite, resExploration, resService, resContactUs]) => {
         setHeaderData(resHeader.data)
         setAboutData(resAbout.data)
         setFavoriteData(resFavorite.data)
+        setExplorationData(resExploration.data)
+        setServiceData(resService.data)
+        setContactUsData(resContactUs.data)
         setLoading(false)
     })
   }, [])
@@ -45,12 +60,12 @@ const App = () => {
         <Header  data={headerData} />
         <About data={aboutData} />
         <Favorite data={favoriteData} /> 
-        {/* <Exploration description="Exploration Design"/> */}
-        {/* <Services title="Services" heading="What i can do for you"/> */}
-        {/* <Contact title="Contact us" heading="Interested in working together with us? we’ll surely you how me turn your idea into amazing design."/> */}
-      {/* <div className='refly__bg'>  */}
-        {/* <Footer/> */}
-      {/* </div> */}
+        <Exploration data={explorationData}/>
+        <Services data={serviceData} />
+        <Contact data={contactUsData} />
+      <div className='refly__bg'> 
+        <Footer/>
+      </div>
 
         
     </div> 

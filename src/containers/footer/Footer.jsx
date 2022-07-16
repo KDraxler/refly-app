@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './footer.css';
 import Logo from '../../assets/logoAja.png'
+import { footerAPI } from '../../api/dataAPI';
+
 const Footer = () => {
+  const[footerData, setFooterData] = useState(null);
+  const[loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    footerAPI().find().then((res) => {
+      setFooterData(res.data);
+      setLoading(false);
+      console.log(res.data)  
+    })
+  },[])
+  
+  if(loading) return <h1>Loading</h1>
   return (
     <div className='refly__footer section__padding'>
       <div className='refly__footer-content'>
