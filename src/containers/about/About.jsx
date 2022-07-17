@@ -1,10 +1,5 @@
 import React from 'react';
 import './about.css';
-import Kiply from '../../assets/Kips.png'
-import api from '../../api';
-import config from '../../config/config';
-
-
 
 const About = (props) => {
   const description = props.data.attributes.description.split("\n\n");
@@ -24,7 +19,6 @@ const About = (props) => {
       </div>
       <div className='refly__about-image'>
         <img src={props.data.attributes.image.data.attributes.formats.large.url} alt="Refly" />
-        {/* {console.log(config.apiURL+props.data.attributes.image.data.attributes.formats.large.url)} */}
       </div>
     </div>
   )

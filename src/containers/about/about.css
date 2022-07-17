@@ -18,7 +18,7 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    color: #CACBCB;
+    color: var(--color-subtext);
     
 }
 
@@ -28,7 +28,7 @@
     font-weight: 600;
     font-size: 64px;
     line-height: 96px;
-    color: #FFF;
+    color: var(--color-text);
 
     margin-top: -16px;
 }
@@ -38,7 +38,9 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    color: #CACBCB;
+    color: var(--color-subtext);
+
+    max-width: 90%;
 }
 
 .refly__about-image img{
