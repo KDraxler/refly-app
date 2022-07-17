@@ -19,7 +19,7 @@ const Navbar_new = () => {
   const[toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className='refly__navbar'>
+    <div className='refly__navbar navbar__padding'>
       <div className='refly__navbar-links'>
         <div className='refly__navbar-links_logo'>  
           <img src={Logo} alt="Logo" />
