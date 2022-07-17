@@ -62,3 +62,30 @@
     height: 11.67px;
     margin-left: 19px;
 }
+
+
+@media screen and (max-width: 1366px) {
+    .refly__favorite-content__heading{
+        font-size: 54px;
+        line-height: 76px;
+        margin: 16px 0 32px 0;
+    }
+    .refly__favorite-content__project{
+        margin-top: 34px;
+    }
+    .refly__favorite-content__more{
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+    .refly__favorite-content__heading{
+        font-size: 44px;
+        line-height: 66px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+}

@@ -59,7 +59,7 @@ const App = () => {
         <Navbar_c_new/>
         <Header  data={headerData} />
         <About data={aboutData} />
-        {/* <Favorite data={favoriteData} />  */}
+        <Favorite data={favoriteData} /> 
         {/* <Exploration data={explorationData}/> */}
         {/* <Services data={serviceData} /> */}
         {/* <Contact data={contactUsData} /> */}

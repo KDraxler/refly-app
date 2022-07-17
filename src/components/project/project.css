@@ -85,3 +85,23 @@
     width: 198px;
     height: 374px;  
 }
+
+
+@media screen and (max-width: 1366px) {
+    
+}
+
+
+@media screen and (max-width: 840px) {
+    .refly__project{
+        height: 100%;
+    }
+    .refly__project-content__heading{
+        font-size: 38px;
+        line-height: 62px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+}
