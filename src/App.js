@@ -59,13 +59,13 @@ const App = () => {
         <Navbar_c_new/>
         <Header  data={headerData} />
         <About data={aboutData} />
-        <Favorite data={favoriteData} /> 
-        <Exploration data={explorationData}/>
-        <Services data={serviceData} />
-        <Contact data={contactUsData} />
-      <div className='refly__bg'> 
+        {/* <Favorite data={favoriteData} />  */}
+        {/* <Exploration data={explorationData}/> */}
+        {/* <Services data={serviceData} /> */}
+        {/* <Contact data={contactUsData} /> */}
+      {/* <div className='refly__bg'> 
         <Footer/>
-      </div>
+      </div> */}
 
         
     </div> 

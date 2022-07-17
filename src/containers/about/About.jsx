@@ -8,7 +8,6 @@ import config from '../../config/config';
 
 const About = (props) => {
   const description = props.data.attributes.description.split("\n\n");
-  // console.log(Object.keys(description))  
   // console.log(props.data)
   return (
     <div className='refly__about section__padding' id='about' >

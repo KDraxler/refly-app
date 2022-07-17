@@ -7,12 +7,11 @@
 body{
     background: var(--color-bg);
     overflow-x: hidden;
-
 }
 
 a{
     color: unset;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .refly__bg{
@@ -80,23 +79,23 @@ a{
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 840px) {
   .section__padding{
-      padding: 4rem;
+      padding: 2.5rem;
   }
   .section__margin{
-      margin: 4rem;
+      margin: 2.5rem;
   }
   .navbar__padding{
-    padding: 2rem;
+    padding: 2.5rem;
 }
 }
 @media screen and (max-width: 550px) {
   .section__padding{
-      padding: 4rem 2rem;
+      padding: 2.5rem 2rem;
   }
   .section__margin{
-      margin: 4rem 2rem;
+      margin: 2.5rem 2rem;
   }
   .navbar__padding{
     padding: 2rem;

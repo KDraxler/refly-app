@@ -13,3 +13,7 @@
     --color-bg-card-type : #333333;
     --color-footer : #23262C;
 }
+
+#root{
+    overflow-x: hidden;
+}

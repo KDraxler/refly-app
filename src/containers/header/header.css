@@ -4,7 +4,7 @@
 
 .refly__header #gl1{
     z-index: -1;
-    top: -30px;
+    top: -100px;
     left: 0;
 }
 .refly__header #gl2{
@@ -48,10 +48,39 @@
 }
 
 
-@media screen and (max-width: 700px) {
-   
+@media screen and (max-width: 840px) {
+    .refly__header #gl1{
+        transform: scale(0.9) translate(-20%, -20%);
+    }
+    .refly__header #gl2{
+        transform: scale(0.7) translate(20%, 10%);
+    }
+
+    .refly__header-content__title{
+        margin-top: 60px;
+    }
+    .refly__header-content__heading{
+        font-size: 44px;
+        line-height: 66px;
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
-    
+    .refly__header #gl1{
+        transform: scale(0.7) translate(-28%, -23%) rotate(25deg);
+    }
+    .refly__header #gl2{
+        transform: scale(0.5) translate(60%, 30%);
+    }
+
+    .refly__header-content__title{
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    .refly__header-content__heading{
+        font-size: 34px;
+        line-height: 56px;
+    }
+
 }

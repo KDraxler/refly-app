@@ -64,3 +64,32 @@
 .refly__more-icon__bg a,img{
     height: 30px;
 }
+
+
+@media screen and (max-width: 1366px) {
+    .refly__more{
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+    .refly__more{
+        width: 100%;
+    }
+    .refly__more-scroll__blink{
+        min-width: 80px;
+        min-height: 80px;
+        margin-right: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .refly__more-scroll{
+        display: none;
+    }
+    .refly__more-social{
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
