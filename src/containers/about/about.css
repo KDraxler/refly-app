@@ -46,3 +46,39 @@
     height: 568px;
 }
 
+@media screen and (max-width: 1366px) {
+    .refly__about-content__heading{
+        font-size: 54px;
+        line-height: 76px;
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+    .refly__about{
+        flex-direction: column;
+    }
+    .refly__about-content__heading{
+        font-size: 44px;
+        line-height: 66px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .refly__about-content{
+        gap: 24px;
+    }
+    .refly__about-content__title{
+        font-size: 20px;
+    }
+    .refly__about-content__description{
+        font-size: 20px;
+    }
+    .refly__about-content__heading{
+        font-size: 34px;
+        line-height: 56px;
+    }
+    .refly__about-image img{
+        display: none;
+    }
+}
