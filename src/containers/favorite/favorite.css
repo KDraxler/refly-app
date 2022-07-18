@@ -84,8 +84,20 @@
         font-size: 44px;
         line-height: 66px;
     }
+    .refly__favorite-content__more{
+        margin-top: 45px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    
+    .refly__favorite #gl3{
+        transform: scale(0.7) translate(28%, -23%);
+    }
+    .refly__favorite-content__title{
+        font-size: 20px;
+    }
+    .refly__favorite-content__heading{
+        font-size: 34px;
+        line-height: 56px;
+    }
 }

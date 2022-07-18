@@ -95,6 +95,7 @@
 @media screen and (max-width: 840px) {
     .refly__project{
         height: 100%;
+        align-items: center;
     }
     .refly__project-content__heading{
         font-size: 38px;
@@ -103,5 +104,21 @@
 }
 
 @media screen and (max-width: 500px) {
-    
+    .refly__project{
+        flex-direction: row;
+    }
+    .refly__project-content{
+        max-width: 100%;
+    }
+    .refly__project-content__image {
+        display: none;
+    }
+    .refly__project-content__heading{
+        font-size: 28px;
+        line-height: 52px;
+    }
+    .refly__favorite-content__desc{
+        font-size: 20px;
+        line-height: 33px;
+    }
 }
