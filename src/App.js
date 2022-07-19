@@ -63,9 +63,9 @@ const App = () => {
         <Exploration data={explorationData}/>
         <Services data={serviceData} />
         <Contact data={contactUsData} />
-      {/* <div className='refly__bg'> 
+      <div className='refly__bg'> 
         <Footer/>
-      </div> */}
+      </div>
 
         
     </div> 
