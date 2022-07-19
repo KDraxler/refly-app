@@ -53,6 +53,8 @@
 @media screen and (max-width: 500px) {
     .refly__offer img{
         margin-bottom: 22px;
+        width: 60px;
+        height: 60px;
     }
     .refly__offer h2{
         font-size: 28px;
