@@ -58,3 +58,26 @@
     width: 13.5px;
     height: 13.5px;
 }
+
+@media screen and (max-width: 1366px) {
+    .refly__contact-content__heading{
+        font-size: 54px;
+        line-height: 76px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .refly__contact-content__heading{
+        font-size: 44px;
+        line-height: 66px;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .refly__contact-content__heading{
+        font-size: 34px;
+        line-height: 56px;
+    }
+    
+}
