@@ -90,3 +90,45 @@
 
     color: #FFFFFF;
 }
+
+
+@media screen and (max-width: 1366px) {
+    .refly__footer-content{
+        gap: 10%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .refly__footer-content{
+        gap: 10%;
+    }
+    .refly__footer-content__home{
+        max-width: 270px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .refly__footer-content{
+        flex-direction: column;
+    }
+    .refly__footer-content__home-desc{
+        font-size: 20px;
+        line-height: 33px;
+    }
+    .refly__footer-content__navigation{
+        margin-top: 52px;
+    }
+    .refly__footer-content__navigation-content{
+        margin-top: 26px;
+        font-size: 20px;
+        line-height: 20px;  
+    }
+    .refly__footer-content__social{
+        margin-top: 52px;
+    }
+    .refly__footer-content__social-content{
+        margin-top: 26px;
+        font-size: 20px;
+        line-height: 20px;  
+    }
+}

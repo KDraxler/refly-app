@@ -36,10 +36,6 @@ const Footer = () => {
                 )
               })
             }
-            {/* <a href=""><p>Home</p></a>
-            <a href=""><p>About Us</p></a>
-            <a href=""><p>Project</p></a>
-            <a href=""><p>Contact Us</p></a> */}
           </div>
         </div>
         <div className='refly__footer-content__social'>
