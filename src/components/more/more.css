@@ -84,7 +84,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .refly__more-scroll{
         display: none;
     }

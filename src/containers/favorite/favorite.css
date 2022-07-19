@@ -89,7 +89,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .refly__favorite #gl3{
         transform: scale(0.7) translate(28%, -23%);
     }

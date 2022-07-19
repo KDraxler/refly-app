@@ -85,7 +85,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
     .refly__exploration-more{
         margin-top: 48px;
     }
