@@ -60,7 +60,7 @@ const App = () => {
         <Header  data={headerData} />
         <About data={aboutData} />
         <Favorite data={favoriteData} /> 
-        {/* <Exploration data={explorationData}/> */}
+        <Exploration data={explorationData}/>
         {/* <Services data={serviceData} /> */}
         {/* <Contact data={contactUsData} /> */}
       {/* <div className='refly__bg'> 

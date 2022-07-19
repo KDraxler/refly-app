@@ -33,6 +33,7 @@
 .refly__exploration-content img{
     width: 415px;
     height: 415px;  
+
 }
 
 .refly__exploration-more{
@@ -57,4 +58,35 @@
     width: 12px;
     height: 11.67px;
     margin-left: 19px;
+}
+
+
+@media screen and (max-width: 1366px) {
+    .refly__exploration-content a{
+        text-decoration: none;
+        height: 315px;
+    }
+    .refly__exploration-content img{
+        width: 315px;
+        height: 315px;  
+    
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+    .refly__exploration-content a{
+        text-decoration: none;
+        height: 315px;
+    }
+    .refly__exploration-content img{
+        width: 315px;
+        height: 315px;  
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .refly__exploration-more{
+        margin-top: 48px;
+    }
 }
