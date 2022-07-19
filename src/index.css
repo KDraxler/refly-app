@@ -5,6 +5,9 @@
     --font-clash : 'Clash Display', sans-serif;
     --font-rubik : 'Rubik', sans-serif;
 
+    --font-sizeDesktopHeading : 64px;
+    --line-heightDesktopHeading : 96px;
+
     --color-text : #FFFFFF;
     --color-subtext : #CACBCB;
 
