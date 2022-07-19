@@ -36,3 +36,33 @@
     color: var(--color-subtext);
 
 }
+
+@media screen and (max-width: 1366px) {
+    .refly__offer{
+        max-width: 350px;
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+    .refly__offer{
+        max-width: 315px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .refly__offer img{
+        margin-bottom: 22px;
+    }
+    .refly__offer h2{
+        font-size: 28px;
+        line-height: 52px;
+        margin-bottom: 10px;
+
+    }
+    .refly__offer p{
+        font-size: 20px;
+        line-height: 33px;
+    }
+    
+}

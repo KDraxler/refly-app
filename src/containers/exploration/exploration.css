@@ -64,11 +64,11 @@
 @media screen and (max-width: 1366px) {
     .refly__exploration-content a{
         text-decoration: none;
-        height: 315px;
+        height: 350px;
     }
     .refly__exploration-content img{
-        width: 315px;
-        height: 315px;  
+        width: 350px;
+        height: 350px;  
     
     }
 }

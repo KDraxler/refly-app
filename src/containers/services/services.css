@@ -39,5 +39,30 @@
     flex-wrap: wrap;
     justify-content:flex-start;
     gap: 20px;
+}
 
+@media screen and (max-width: 1366px) {
+    .refly__services-content__heading{
+        font-size: 54px;
+        line-height: 76px;
+    }
+}
+
+
+@media screen and (max-width: 840px) {
+   
+}
+
+@media screen and (max-width: 500px) {
+    .refly__services-content__title{
+        font-size: 20px;
+        margin-bottom: 16px;
+
+    }
+    .refly__services-content__heading{
+        font-size: 34px;
+        line-height: 56px;
+        margin-bottom: 32px;
+
+    }
 }
